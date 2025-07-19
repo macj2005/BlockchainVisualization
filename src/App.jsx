@@ -141,12 +141,12 @@ function App() {
 
         <div className="mt-20 w-full text-left text-gray-300 mb-20">
           <h2 className="text-3xl font-bold py-5 text-center">About</h2>
-          <p className="mx-56 mb-5">
+          <p className="mx-4 sm:mx-16 md:mx-32 lg:mx-56 mb-5">
             &nbsp;&nbsp;&nbsp;&nbsp;This is a tool to simulate what a blockchain is and visualize how it works.
             Blockchains are crucial data structures used in finance and crypto-related industries, but ultimately have universal applications.
             Think of a blockchain as a clever linked list. Each chain consists of several blocks which hold data about user transactions on the chain, just like nodes in a linked list structure.
           </p>
-          <p className="mx-56 mb-5">
+          <p className="mx-4 sm:mx-16 md:mx-32 lg:mx-56 mb-5">
             &nbsp;&nbsp;&nbsp;&nbsp;Instead of pointers however, a blockchain stores the hash of the previous block in the chain.
             This allows blocks to be added continuously without having to modify blocks in the chain constantly.
             Each block stores its hash, the hash of the previous block, a timestamp, a nonce, and a array of transactions.
@@ -154,14 +154,14 @@ function App() {
             It is a counter that increments for each hash calculation, until a hash with the correct number of leading zeros is found. 
             So, the final nonce value is the amount of tries it took to get a valid hash for that block.
           </p>
-          <p className="mx-56 mb-5">
+          <p className="mx-4 sm:mx-16 md:mx-32 lg:mx-56 mb-5">
             &nbsp;&nbsp;&nbsp;&nbsp;Mining is simply calculating hashes over and over until a valid hash is found, usually by decentralized users of the blockchain independently, or in a collective mining pool. 
             When a block is mined, it validates all transactions that occured on the chain after the last block was mined, adding a new block on the chain with all of those new transactions.
             This is how a group of people can have a decentralized transaction network, by letting users of the network validate transactions themselves.
           </p>
 
           <h2 className="text-2xl font-semibold mb-5 text-center">Input Fields</h2>
-          <ul className="text-left mx-56">
+          <ul className="text-left mx-4 sm:mx-16 md:mx-32 lg:mx-56">
             <li className="py-2"><b>Difficulty</b> - How many trailing zeros that should be required in future block hashes. 
             This is the proof-of-work system, making it where calculating new hashes is difficult, and thus makes the chain harder to tamper with.</li>
             <li className="py-2"><b>Mining Reward</b> - How many tokens should be released after a block is successfully mined.</li>
